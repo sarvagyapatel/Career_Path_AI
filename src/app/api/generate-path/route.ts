@@ -7,7 +7,6 @@ import { encoding_for_model } from "tiktoken";
 
 
 export async function POST(req: NextRequest) {
-    const user = await req.json();
 
     const enc = encoding_for_model("gpt-3.5-turbo");
 
